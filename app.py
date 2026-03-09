@@ -50,8 +50,8 @@ if mode == "Use Existing Farm":
         if uploaded_file:
 
             image = load_image(uploaded_file)
-            checkpoint=f"farms\{farm_name}\checkpoints\\best_model.pth  "
-            classes_json=f"farms\{farm_name}\classes.json"
+            checkpoint = fr"farms\{farm_name}\checkpoints\best_model.pth"
+            classes_json = fr"farms\{farm_name}\classes.json"
     
             label, confidence = identify_pig(image,
                 checkpoint,
